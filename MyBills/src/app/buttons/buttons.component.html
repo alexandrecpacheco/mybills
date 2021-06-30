@@ -1,0 +1,44 @@
+<!-- Adding inputs -->
+<div *ngFor="let container of containers;">
+    <div class="list-bills form-group col-md-12" *ngIf="this.payments.show">
+        <div class="input-group">
+            <input class="btn-disabled" #Id="ngModel" name="Id" [(ngModel)]="bill.Id" ngDefaultControl />
+            <input name="Itens" [value]="bill.Itens" #Itens="ngModel" [(ngModel)]="bill.Itens" class="col-sm-4 form-control height itens" placeholder="Item" ngDefaultControl required />
+            <input name="Values" [value]="bill.Values" #Values="ngModel" [(ngModel)]="bill.Values" class="col-sm-3 form-control height values" placeholder="Valor" ngDefaultControl required />
+            <input name="DueDate" [value]="bill.DueDate" #DueDate="ngModel" [(ngModel)]="bill.DueDate" class="col-sm-2 form-control height due-date" placeholder="Vencimento" ngDefaultControl required />
+            <!-- Behaviour when is Status -->
+            <div class="input-group-prepend col-3 btn-status">
+                <button name="Status"
+                    (click)="this.payments.onSubmit(this.payments.isDeleted, bill, false)"
+                    class="btn btn-lg btn-block change-color btn-status btn-success"
+                    #Status="ngModel" [(ngModel)]="bill.Status" ngDefaultControl type="submit">
+                    <i class="i-group fas fa-check"></i> 
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Foreach of Trashes -->
+<div *ngFor="let trash of trashes">
+    <div class="input-group-prepend col-3 icon-trash">
+        <button name="Status" ngdefaultcontrol="" type="submit" class="btn btn-lg btn-block change-color btn-success ng-pristine ng-valid ng-touched" ng-reflect-model="true" value="true">
+            <i class="i-group fas fa-trash-alt"></i>
+        </button>
+        <br>
+    </div>
+</div>
+
+<!-- Add Button -->
+<div class="btn-plus btn-outline-success" id="btn-plus" (click)="add()">
+    <i class="i-plus fas fa-plus-circle fa-3x"></i>
+</div>
+
+<!-- Start Delete Button -->
+<div *ngIf="!this.isDeleted" class="btn-delete btn-outline-danger" id="btn-delete" 
+    (click)="delete()">
+    <i class="i-delete fas fa-trash-alt fa-3x"></i>
+</div>
+<div *ngIf="this.isDeleted" class="btn-status btn-outline-success" id="btn-status"
+    (click)="delete()">
+    <i class="i-delete fas fa-check fa-3x"></i>
+</div>

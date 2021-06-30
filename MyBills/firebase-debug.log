@@ -1,0 +1,94 @@
+[debug] [2020-10-02T19:16:48.264Z] ----------------------------------------------------------------------
+[debug] [2020-10-02T19:16:48.266Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\alexa\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting:mybills-171da
+[debug] [2020-10-02T19:16:48.267Z] CLI Version:   8.11.2
+[debug] [2020-10-02T19:16:48.267Z] Platform:      win32
+[debug] [2020-10-02T19:16:48.267Z] Node Version:  v10.13.0
+[debug] [2020-10-02T19:16:48.269Z] Time:          Fri Oct 02 2020 16:16:48 GMT-0300 (GMT-03:00)
+[debug] [2020-10-02T19:16:48.269Z] ----------------------------------------------------------------------
+[debug] [2020-10-02T19:16:48.269Z] 
+[debug] [2020-10-02T19:16:48.279Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-10-02T19:16:48.280Z] > authorizing via signed-in user
+[debug] [2020-10-02T19:16:48.280Z] [iam] checking project mybills-171da for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-10-02T19:16:48.283Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/mybills-171da:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-10-02T19:16:49.151Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 02 Oct 2020 19:16:48 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=734","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-10-02T19:16:49.153Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/mybills-171da  
+ 
+[debug] [2020-10-02T19:16:49.697Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 02 Oct 2020 19:16:49 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'mybills-171da'...
+[info] 
+[info] i  deploying hosting 
+[info] 
+[info] +  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/mybills-171da/overview
+[debug] [2020-10-02T19:16:50.206Z] TypeError: Cannot read property 'deploys' of undefined
+    at C:\Users\alexa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:85:36
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2020-10-02T19:17:58.262Z] ----------------------------------------------------------------------
+[debug] [2020-10-02T19:17:58.264Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\alexa\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting:mybills-171da
+[debug] [2020-10-02T19:17:58.265Z] CLI Version:   8.11.2
+[debug] [2020-10-02T19:17:58.265Z] Platform:      win32
+[debug] [2020-10-02T19:17:58.265Z] Node Version:  v10.13.0
+[debug] [2020-10-02T19:17:58.267Z] Time:          Fri Oct 02 2020 16:17:58 GMT-0300 (GMT-03:00)
+[debug] [2020-10-02T19:17:58.267Z] ----------------------------------------------------------------------
+[debug] [2020-10-02T19:17:58.267Z] 
+[debug] [2020-10-02T19:17:58.282Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-10-02T19:17:58.282Z] > authorizing via signed-in user
+[debug] [2020-10-02T19:17:58.283Z] [iam] checking project mybills-171da for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-10-02T19:17:58.286Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/mybills-171da:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-10-02T19:17:59.143Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 02 Oct 2020 19:17:58 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=734","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-10-02T19:17:59.145Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/mybills-171da  
+ 
+[debug] [2020-10-02T19:17:59.524Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 02 Oct 2020 19:17:59 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'mybills-171da'...
+[info] 
+[info] i  deploying hosting 
+[info] 
+[info] +  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/mybills-171da/overview
+[debug] [2020-10-02T19:17:59.738Z] TypeError: Cannot read property 'deploys' of undefined
+    at C:\Users\alexa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:85:36
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2020-10-04T15:24:25.607Z] ----------------------------------------------------------------------
+[debug] [2020-10-04T15:24:25.609Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\alexa\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting:mybills-171da
+[debug] [2020-10-04T15:24:25.609Z] CLI Version:   8.11.2
+[debug] [2020-10-04T15:24:25.609Z] Platform:      win32
+[debug] [2020-10-04T15:24:25.610Z] Node Version:  v10.13.0
+[debug] [2020-10-04T15:24:25.624Z] Time:          Sun Oct 04 2020 12:24:25 GMT-0300 (GMT-03:00)
+[debug] [2020-10-04T15:24:25.625Z] ----------------------------------------------------------------------
+[debug] [2020-10-04T15:24:25.625Z] 
+[debug] [2020-10-04T15:24:25.650Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-10-04T15:24:25.650Z] > authorizing via signed-in user
+[debug] [2020-10-04T15:24:25.651Z] [iam] checking project mybills-171da for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-10-04T15:24:25.653Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-10-04T15:24:25.653Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-10-04T15:24:25.895Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 04 Oct 2020 15:24:25 GMT","server":"scaffolding on HTTPServer2","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-10-04T15:24:25.910Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/mybills-171da:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-10-04T15:24:26.883Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 04 Oct 2020 15:24:26 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=793","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-10-04T15:24:26.886Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/mybills-171da  
+ 
+[debug] [2020-10-04T15:24:29.038Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 04 Oct 2020 15:24:27 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'mybills-171da'...
+[info] 
+[info] i  deploying hosting 
+[info] 
+[info] +  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/mybills-171da/overview
+[debug] [2020-10-04T15:24:29.277Z] TypeError: Cannot read property 'deploys' of undefined
+    at C:\Users\alexa\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:85:36
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[error] 
+[error] Error: An unexpected error has occurred.

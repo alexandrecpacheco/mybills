@@ -1,0 +1,36 @@
+<div class="row">
+    <div class="col-lg-3 col-centered div-title">
+        <h2 class="mat-h3">Debitos Mensais</h2>
+    </div>
+</div>
+<div class="is-loading col-md-12" *ngIf="!isLoading">
+    <img src="assets/images/loading.gif" />
+</div>
+<div class="list-bills form-group col-md-12" *ngFor="let bill of listBills;">
+    <div class="input-group">
+        <input class="btn-disabled" #Id="ngModel" name="Id" [(ngModel)]="bill.Id" ngDefaultControl />
+        <input name="Itens" [value]="bill.Itens" #Itens="ngModel" [(ngModel)]="bill.Itens" class="col-sm-4 form-control height itens" placeholder="Item" ngDefaultControl required />
+        <input name="Values" type="number" min="1.0" step="1.0" max="9999" [value]="bill.Values" #Values="ngModel" [(ngModel)]="bill.Values" class="col-sm-3 form-control height values" placeholder="Valor" ngDefaultControl required />
+        <input name="DueDate" type="number" [value]="bill.DueDate" #DueDate="ngModel" [(ngModel)]="bill.DueDate" class="col-sm-2 form-control height due-date" placeholder="Vencimento" ngDefaultControl min="1" max="31" required />
+        <!-- Behaviour when is Status -->
+        <div class="input-group-prepend col-3 btn-status" *ngIf="!this.isDeleted">
+            <button name="Status"
+                (click)="onSubmit(this.isDeleted, bill, true)"
+                [ngClass]="bill.Status ? 'btn btn-lg btn-block change-color btn-status btn-success' : 'btn btn-lg btn-block change-color btn-status btn-warning'"
+                #Status="ngModel" [(ngModel)]="bill.Status" ngDefaultControl type="submit">
+                <i [ngClass]="bill.Status ? 'i-group fas fa-check' : 'i-group fas fa-times'"></i> 
+            </button>
+        </div>
+        <!-- Behaviour when is deleted -->
+        <div class="input-group-prepend col-3 btn-status" *ngIf="this.isDeleted">
+            <button name="Status"
+                (click)="onSubmit(this.isDeleted, bill, true)"
+                class="btn btn-lg btn-block change-color btn-status btn-danger"
+                #Status="ngModel" [(ngModel)]="bill.Status" ngDefaultControl type="submit">
+                <i [ngClass]="this.isDeleted ? 'i-group fas fa-trash-alt' : 'i-group fas fa-check'"></i> 
+            </button>
+        </div>
+    </div>
+</div>
+<app-buttons></app-buttons>
+<label>v.1.0.5</label>

@@ -1,0 +1,78 @@
+/* You can add global styles to this file, and also import other style files */
+table { 
+    border-collapse: collapse; 
+}
+tr.tr-bills td{
+  border: 1pt solid black;
+}
+tr.tr-bills th{
+  border: 1pt solid black;
+}
+
+.col-centered{
+  float: none;
+  margin: 0 auto;
+}
+
+.height {
+  height: 44px;
+}
+
+.greenClass { 
+  background-color: #28a745; 
+}
+
+.redClass { 
+  background-color: red 
+}
+
+.btn-plus{
+  margin: 0 5% 2% 0;
+  float: right;
+  border-radius: 50%;
+  position: relative;
+  top: 5px;
+}
+
+.div-title{
+  padding: 10px 10px 20px 20px;
+}
+
+.btn-status {
+  margin: 10px 0 0 0;
+}
+
+.btn-disabled{
+  display: none;
+}
+
+#toast-container > div {
+  opacity: 1;
+}
+
+.btn-delete {
+    margin: 0 2% 2% 0;
+    float: right;
+    padding: 5px;
+    border-radius: 4px !important;
+}
+
+#btn-status {
+  float: right;
+  margin: 2% 2% 2% 0;
+  padding: 5px;
+}
+
+/* .itens{
+  border-radius: 10px 0 0 10px !important;
+} */
+
+.btn-success{
+  border-radius: 4px !important;
+}
+
+.is-loading {
+  text-align: center;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

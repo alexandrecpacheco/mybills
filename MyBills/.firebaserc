@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "mybills-171da"
+  },
+  "targets": {
+    "mybills-171da": {
+      "hosting": {
+        "MyBills": [
+          "mybills-171da"
+        ]
+      }
+    }
+  }
+}
